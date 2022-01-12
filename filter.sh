@@ -49,4 +49,5 @@ if ! tar tf archives/$(date +"%d-%m-%Y") &> /dev/null; then
     echo "Achive is BAD!"
 else
     echo "Archive is OK"
+    rm -f $(date +"%d-%m-%Y")
 fi
