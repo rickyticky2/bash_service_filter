@@ -21,9 +21,9 @@ sudo chmod ugo+r $namere
 cat list.out | grep 'Error\|CrashLoopBackOff' | cut -d ' ' -f 1 > $namef
 cat list.out | grep 'Running' | cut -d ' ' -f 1 > $namer
 
-awk 'gsub(/-[0-9a-z]{9,10}-[0-9a-z]{5}$/,"")' $namef > temp.txt && mv temp.txt $namef
-awk 'gsub(/-[0-9a-z]{9,10}-[0-9a-z]{5}$/,"")' $namer > temp.txt && mv temp.txt $namer
-#or awk '{sub(/-[0-9a-z]{9,10}-[0-9a-z]{5}$/,"")}1' $namer > temp.txt && mv temp.txt $namer
+awk '{sub(/-[0-9a-z]{9,10}-[0-9a-z]{5}$/,"")}1' $namef > temp.txt && mv temp.txt $namef
+awk '{sub(/-[0-9a-z]{9,10}-[0-9a-z]{5}$/,"")}1' $namer > temp.txt && mv temp.txt $namer
+
 
  
 echo "number of running service: " > $namere
