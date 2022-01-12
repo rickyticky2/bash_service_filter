@@ -1,6 +1,7 @@
 # bash_service_filter
 
 ## sudo chmod ugo+x filter.sh 
+## mkdir archives
 
 
 ## Задание #1 - Bash-скрипт
