@@ -1,5 +1,8 @@
 # bash_service_filter
 
+## sudo chmod ugo+x filter.sh 
+
+
 ## Задание #1 - Bash-скрипт
 
 1. Написать BASH-скрипт который скачивает [файл](https://raw.githubusercontent.com/GreatMedivack/files/master/list.out) из репозитория.
