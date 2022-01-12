@@ -41,6 +41,8 @@ date >> $namere
 # packing and checking the archive
 tar -cvf $(date +"%d-%m-%Y") $namer $namef $namere --remove-files
 cp -n $(date +"%d-%m-%Y") archives/
+rm -f list.out 
+
 
 
 if ! tar tf archives/$(date +"%d-%m-%Y") &> /dev/null; then
